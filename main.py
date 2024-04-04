@@ -12,6 +12,12 @@ class TodoList:
     def addTodo(self, Todo):
         self.todos.append(Todo)
 
+    def updateTodo(self, index):
+        if self.todos[index].isCompleted == False:
+            self.todos[index].isCompleted = True
+        else:
+            self.todos[index].isCompleted = False
+
 
 # t= TodoList()
 # t.addTodo(Todo("Add choco"))
