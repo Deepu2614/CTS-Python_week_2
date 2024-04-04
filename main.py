@@ -17,7 +17,10 @@ class TodoList:
             self.todos[index].isCompleted = True
         else:
             self.todos[index].isCompleted = False
-
+    
+    def removeTodo(self, index):
+        self.todos.pop(index)
+    #remove feature finished
 
 # t= TodoList()
 # t.addTodo(Todo("Add choco"))
