@@ -14,3 +14,10 @@ This code is a Todo app done for CTS nurture programme.
 
 ## Update Task Image
 ![img2](https://github.com/Deepu2614/CTS-Python_week_2/assets/97432229/8cd57610-07fb-48f2-8d40-ec2bce761634)
+
+## Procedure to run the program
+- open your code editor
+- clone the repository using git clone https://github.com/Deepu2614/CTS-Python_week_2
+- open main.py file in your code editor
+- open terminal
+- use 'python main.py' to run the program
