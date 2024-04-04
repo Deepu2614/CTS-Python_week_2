@@ -21,4 +21,11 @@ class TodoList:
         self.todos.pop(index)
 
 
+    def viewAllTodos(self):
+        for i in t.todos:
+            print(f" id = {t.todos.index(i)}")
+            print(f" taskName = {i.taskName}")
+            print(f" isCompleted = {i.isCompleted}")
+
+
     
