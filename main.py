@@ -53,6 +53,24 @@ def main():
             case _:
                 break
 
+    def updateTodo(self, index):
+        if self.todos[index].isCompleted == False:
+            self.todos[index].isCompleted = True
+        else:
+            self.todos[index].isCompleted = False
+    
+    def removeTodo(self, index):
+        self.todos.pop(index)
+
+
+    def viewAllTodos(self):
+        for i in t.todos:
+            print(f" id = {t.todos.index(i)}")
+            print(f" taskName = {i.taskName}")
+            print(f" isCompleted = {i.isCompleted}")
+
+
 
 if __name__ == "__main__":
     main()
+
