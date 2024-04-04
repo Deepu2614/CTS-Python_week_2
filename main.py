@@ -1,4 +1,3 @@
-#init
 
 class Todo:
     def __init__(self, taskName, isCompleted=False):
@@ -17,11 +16,9 @@ class TodoList:
             self.todos[index].isCompleted = True
         else:
             self.todos[index].isCompleted = False
+    
+    def removeTodo(self, index):
+        self.todos.pop(index)
 
 
-# t= TodoList()
-# t.addTodo(Todo("Add choco"))
-# t.addTodo(Todo("Add milk"))
-# for i in t.todos:
-#     print(i.taskName)
     
