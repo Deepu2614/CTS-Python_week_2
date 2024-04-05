@@ -1,27 +1,32 @@
+# to-do class with 2 attributes -> taskName, isCompleted
 class Todo:
     def __init__(self, taskName, isCompleted=False):
         self.taskName = taskName
         self.isCompleted = isCompleted 
 
+# todo list class with all manipulation methods
 class TodoList:
     def __init__(self):
         self.todos = []
 
+    # to add todos to todos list
     def addTodo(self, Todo):
         self.todos.append(Todo)
         print(f"Task {Todo.taskName} Added Successfully \n")
 
+    # to remove todos to todos list
     def removeTodo(self, index):
         deletedTask = self.todos.pop(index)
         print(f"Task {deletedTask.taskName} Deleted Successfully \n")
 
-
+    # to view all todos
     def viewAllTodos(self):
         for i in self.todos:
             print(f" id = {self.todos.index(i)}")
             print(f" taskName = {i.taskName}")
             print(f" isCompleted = {i.isCompleted} \n\n")
     
+    # to update todo
     def updateTodo(self, index):
         if self.todos[index].isCompleted == False:
             self.todos[index].isCompleted = True
